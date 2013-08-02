@@ -10,7 +10,7 @@ SET TARGET_CONFIG=%1
 :framework_version
 SET FRAMEWORK_VERSION=v3.5
 SET OUTPUT=output-cf35
-SET ILMERGE_VERSION=v4,%FRAMEWORK_PATH%
+SET ILMERGE_VERSION=v2,"C:\Program Files (x86)\Microsoft.NET\SDK\CompactFramework\v3.5\Debugger\BCL"
 SET LIB_DIRECTORY=4.0
 
 :build
