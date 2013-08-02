@@ -33,8 +33,9 @@ namespace CommonDomain.Persistence
 		public ConflictingCommandException(string message, Exception innerException)
 			: base(message, innerException)
 		{
-		}
+        }
 
+#if !PocketPC
 		/// <summary>
 		/// Initializes a new instance of the ConflictingCommandException class.
 		/// </summary>
@@ -44,5 +45,6 @@ namespace CommonDomain.Persistence
 			: base(info, context)
 		{
 		}
-	}
+#endif
+    }
 }

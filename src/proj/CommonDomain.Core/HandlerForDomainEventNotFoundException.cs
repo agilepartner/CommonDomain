@@ -18,10 +18,12 @@ namespace CommonDomain.Core
 			: base(message, innerException)
 		{
 		}
-
+#if !PocketPC
 		public HandlerForDomainEventNotFoundException(SerializationInfo info, StreamingContext context)
 			: base(info, context)
 		{
 		}
+#endif
 	}
+
 }

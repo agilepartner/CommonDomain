@@ -34,7 +34,7 @@ namespace CommonDomain.Persistence
 			: base(message, innerException)
 		{
 		}
-
+#if !PocketPC
 		/// <summary>
 		/// Initializes a new instance of the PersistenceException class.
 		/// </summary>
@@ -44,5 +44,6 @@ namespace CommonDomain.Persistence
 			: base(info, context)
 		{
 		}
+#endif
 	}
 }
