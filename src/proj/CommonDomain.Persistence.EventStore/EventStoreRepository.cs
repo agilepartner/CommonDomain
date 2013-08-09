@@ -3,8 +3,13 @@ namespace CommonDomain.Persistence.EventStore
 	using System;
 	using System.Collections.Generic;
 	using System.Linq;
+#if PocketPC
+    using global::NEventStore;
+    using global::NEventStore.Persistence;
+#else
 	using global::EventStore;
 	using global::EventStore.Persistence;
+#endif
 
 	public class EventStoreRepository : IRepository, IDisposable
 	{

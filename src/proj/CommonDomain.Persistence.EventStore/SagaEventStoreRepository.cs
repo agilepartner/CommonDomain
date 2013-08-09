@@ -3,8 +3,13 @@ namespace CommonDomain.Persistence.EventStore
 	using System;
 	using System.Collections.Generic;
 	using System.Linq;
+#if PocketPC
+    using global::NEventStore;
+    using global::NEventStore.Persistence;
+#else
 	using global::EventStore;
 	using global::EventStore.Persistence;
+#endif
 
 	public class SagaEventStoreRepository : ISagaRepository, IDisposable
 	{
@@ -74,7 +79,7 @@ namespace CommonDomain.Persistence.EventStore
 		public void Save(ISaga saga, Guid commitId, Action<IDictionary<string, object>> updateHeaders)
 		{
 			if (saga == null)
-				throw new ArgumentNullException("saga", ExceptionMessages.NullArgument);
+				throw new ArgumentNullException("saga", CommonDomain.Persistence.EventStore.ExceptionMessages.NullArgument);
 
 			var headers = PrepareHeaders(saga, updateHeaders);
 			var stream = this.PrepareStream(saga, headers);

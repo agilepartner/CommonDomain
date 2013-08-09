@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonDomain.Core.CF", "pro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonDomain.Persistence.CF", "proj\CommonDomain.Persistence\CommonDomain.Persistence.CF.csproj", "{E22CFC45-E5AC-4495-B01E-68318DECA902}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonDomain.Persistence.EventStore.CF", "proj\CommonDomain.Persistence.EventStore\CommonDomain.Persistence.EventStore.CF.csproj", "{CD957A39-4480-4B2D-8F85-C1F623EE0511}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{E22CFC45-E5AC-4495-B01E-68318DECA902}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E22CFC45-E5AC-4495-B01E-68318DECA902}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E22CFC45-E5AC-4495-B01E-68318DECA902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD957A39-4480-4B2D-8F85-C1F623EE0511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD957A39-4480-4B2D-8F85-C1F623EE0511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD957A39-4480-4B2D-8F85-C1F623EE0511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD957A39-4480-4B2D-8F85-C1F623EE0511}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

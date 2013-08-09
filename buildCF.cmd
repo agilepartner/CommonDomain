@@ -28,6 +28,7 @@ SET FILES_TO_MERGE=
 SET FILES_TO_MERGE=%FILES_TO_MERGE% "src/proj/CommonDomain/bin/%TARGET_CONFIG%/CF/CommonDomain.dll"
 SET FILES_TO_MERGE=%FILES_TO_MERGE% "src/proj/CommonDomain.Core/bin/%TARGET_CONFIG%/CF/CommonDomain.Core.dll"
 SET FILES_TO_MERGE=%FILES_TO_MERGE% "src/proj/CommonDomain.Persistence/bin/%TARGET_CONFIG%/CF/CommonDomain.Persistence.dll"
+SET FILES_TO_MERGE=%FILES_TO_MERGE% "src/proj/CommonDomain.Persistence.EventStore/bin/%TARGET_CONFIG%/CF/CommonDomain.Persistence.EventStore.dll"
 bin\ilmerge-bin\ILMerge.exe /keyfile:src/CommonDomain.snk /xmldocs /targetplatform:%ILMERGE_VERSION% /out:%OUTPUT%/bin/CommonDomain.dll %FILES_TO_MERGE%
 
 echo Copying
